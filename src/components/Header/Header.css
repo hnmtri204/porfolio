@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  font-size: 16px;
+}
+
+.email-container {
+  display: flex;
+  align-items: center; /* Căn giữa thẻ a và button */
+}
+
+.email-link {
+  background-color: #f0f0f0; /* Màu nền xám */
+  border-radius: 15px; /* Bo tròn */
+  padding: 8px 12px; /* Padding bên trong */
+  text-decoration: none; /* Bỏ gạch chân */
+  color: #333; /* Màu chữ */
+  margin-right: 10px; /* Khoảng cách giữa email và button */
+}
+
+.email-link:hover{
+  color: #000;
+}
+
+.contact-button {
+  background-color: #666; /* Màu nền cho button */
+  color: white; /* Màu chữ cho button */
+  border: none; /* Bỏ viền */
+  border-radius: 15px; /* Bo tròn góc cho button */
+  padding: 8px 16px; /* Padding cho button */
+  text-decoration: none;
+  cursor: pointer; /* Con trỏ chuột khi hover */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+.contact-button:hover {
+  background-color: #000; /* Màu nền khi hover */
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-link {
+  color: #666;
+  text-decoration: none; /* Bỏ gạch chân */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+

@@ -1,0 +1,80 @@
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 0;
+}
+
+/* Avatar Background Styling */
+.avatar {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 24px;
+  border-radius: 50%; /* Bo tròn */
+  overflow: hidden;
+  background-color: #d3d3d3; /* Màu xám cho background */
+  display: flex; /* Để căn giữa hình ảnh */
+  justify-content: center; /* Căn giữa hình ảnh */
+  align-items: center; /* Căn giữa hình ảnh */
+}
+
+/* Avatar Image */
+.avatar-image {
+  width: 90%; /* Giảm kích thước để có khoảng cách với background */
+  height: 90%; /* Giảm kích thước để có khoảng cách với background */
+  object-fit: cover;
+  border-radius: 50%; /* Bo tròn hình ảnh */
+}
+
+/* Heading Styling */
+.heading {
+  font-family: 'Otterco Display Medium', sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 64px;
+  background: linear-gradient(
+    97.0286deg,
+    rgb(11, 11, 11) 0%,
+    rgba(12, 12, 12, 0.55) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
+
+/* Highlighted Text */
+.highlight {
+  font-family: 'Otterco', sans-serif;
+  font-weight: 500;
+}
+
+/* Button Styling */
+.button {
+  font-family: 'Otterco', sans-serif;
+  font-weight: 500;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 32px; /* Tăng kích thước padding */
+  font-size: 20px; /* Tăng kích thước chữ */
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover Effect for Button */
+.button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+}

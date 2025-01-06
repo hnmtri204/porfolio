@@ -1,0 +1,36 @@
+.brands {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 120px 0;
+  overflow-x: auto;
+  background-color: #d3d3d3; /* Thêm background màu xám */
+  border-radius: 8px; /* Bo tròn các góc nếu cần */
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: column; /* Đặt hướng theo cột */
+  align-items: center; /* Căn giữa các phần tử bên trong */
+  text-align: center; /* Căn giữa chữ */
+}
+
+.brand-image {
+  width: 40px; /* Điều chỉnh kích thước hình ảnh */
+  height: auto; /* Giữ tỷ lệ hình */
+  margin-bottom: 8px; /* Khoảng cách giữa hình và tên */
+}
+
+.brand-text {
+  color: #666;
+  font-weight: 500;
+  white-space: nowrap; /* Ngăn không cho chữ xuống dòng */
+  display: inline-block; /* Đảm bảo tên thương hiệu nằm trên một hàng ngang */
+}
+
+@media (max-width: 768px) {
+  .brands {
+    padding: 48px 24px;
+    gap: 24px;
+  }
+}
