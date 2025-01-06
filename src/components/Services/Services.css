@@ -40,6 +40,11 @@
   font-size: 14px;
 }
 
+.service-icon img {
+  width: 100%; /* Chiều rộng đầy đủ của khung */
+  height: auto; /* Giữ tỉ lệ hình ảnh */
+}
+
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: 1fr;

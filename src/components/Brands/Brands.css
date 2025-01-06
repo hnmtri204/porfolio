@@ -1,36 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .brands {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  /* Đặt các thương hiệu về phía trái */
   gap: 32px;
+  /* Khoảng cách giữa các thương hiệu */
   padding: 120px 0;
+  /* Khoảng cách trên và dưới */
   overflow-x: auto;
-  background-color: #d3d3d3; /* Thêm background màu xám */
-  border-radius: 8px; /* Bo tròn các góc nếu cần */
+  /* Cho phép cuộn ngang nếu cần */
+  background-color: #f0f0f0;
+  /* Thay đổi màu nền sáng hơn */
+  border-radius: 8px;
+  /* Bo tròn các góc nếu cần */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Thêm bóng đổ cho phần brands */
+  font-family: 'Pacifico', cursive;
 }
 
 .brand-name {
-  display: flex;
-  flex-direction: column; /* Đặt hướng theo cột */
-  align-items: center; /* Căn giữa các phần tử bên trong */
-  text-align: center; /* Căn giữa chữ */
+  display: inline-block;
+  flex-direction: row;
+  /* Đặt hướng theo hàng ngang */
+  align-items: center;
+  /* Căn giữa các phần tử bên trong */
+  text-align: center;
+  /* Căn giữa chữ */
+  padding: 0 70px;
+  /* Khoảng cách giữa các thương hiệu */
+  transition: transform 0.3s ease;
+  /* Thêm hiệu ứng chuyển động */
 }
 
-.brand-image {
-  width: 40px; /* Điều chỉnh kích thước hình ảnh */
-  height: auto; /* Giữ tỷ lệ hình */
-  margin-bottom: 8px; /* Khoảng cách giữa hình và tên */
+.brand-name:hover {
+  transform: scale(1.1);
+  /* Phóng to khi hover */
 }
 
 .brand-text {
-  color: #666;
-  font-weight: 500;
-  white-space: nowrap; /* Ngăn không cho chữ xuống dòng */
-  display: inline-block; /* Đảm bảo tên thương hiệu nằm trên một hàng ngang */
+  color: #4a4a4a;
+  /* Thay đổi màu chữ tối hơn */
+  font-weight: bold;
+  /* Đậm hơn để nổi bật */
+  font-size: 56px;
+  /* Tăng kích thước chữ */
+  white-space: nowrap;
+  /* Ngăn không cho chữ xuống dòng */
+  display: inline-block;
+  /* Đảm bảo tên thương hiệu nằm trên một hàng ngang */
+  font-family: 'Rowdies', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Thêm hiệu ứng bóng đổ */
 }
 
 @media (max-width: 768px) {
   .brands {
     padding: 48px 24px;
     gap: 24px;
+  }
+
+  .brand-text {
+    font-size: 32px;
+    /* Kích thước chữ nhỏ hơn cho màn hình nhỏ */
   }
 }

@@ -2,6 +2,10 @@
 .contact {
   text-align: center;
   padding: 80px 0;
+  background-color: #f7f7f7;
+  border-top-left-radius: 200px; /* Tăng độ bo góc cạnh trên trái */
+  border-top-right-radius: 200px; /* Tăng độ bo góc cạnh trên phải */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact Icon */
@@ -9,6 +13,11 @@
   width: 64px;
   height: 64px;
   margin: 0 auto 24px;
+  transition: transform 0.3s ease;
+}
+
+.contact-icon:hover {
+  transform: rotate(360deg);
 }
 
 .heading {
@@ -16,6 +25,7 @@
   font-weight: bold;
   margin-bottom: 16px;
   line-height: 1.2;
+  color: #333;
 }
 
 /* Button Group */
@@ -35,19 +45,27 @@
   border-radius: 9999px;
   border: none;
   cursor: pointer;
-  transition: opacity 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
 }
 
 .button:hover {
-  opacity: 0.9;
+  background-color: #444;
+  transform: scale(1.05);
 }
 
 /* Button Outline */
 .button-outline {
   background-color: transparent;
   color: #000;
-  border: 1px solid #000;
+  border: 2px solid #000;
   font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-outline:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 /* Mobile Responsiveness */
